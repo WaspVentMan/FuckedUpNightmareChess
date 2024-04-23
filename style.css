@@ -1,0 +1,49 @@
+@font-face {
+    font-family: deltarune;
+    src: url(deltarune.ttf);
+}
+
+body {
+    width: 768px;
+    height: 768px;
+    padding: 16px;
+    margin: 0%;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr); 
+    
+    background-image: url('board.png');
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.containPiece {
+    width: 96px;
+    height: 96px;
+
+    border-radius: 8px;
+}
+
+.outerPiece {
+    width: 96px;
+    height: 96px;
+}
+
+.innerPiece {
+    width: 96px;
+    height: 96px;
+}
+
+.winCard {
+    width: 768px;
+    height: 768px;
+    line-height: 768px;
+    text-align: center;
+
+    font-size: 96px;
+    font-family: deltarune;
+
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
