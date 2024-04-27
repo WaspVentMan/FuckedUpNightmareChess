@@ -8,6 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="board"></div>
+    <div class="menu">
+        <br><u class="title">FUCKED UP NIGHTMARE CHESS: THE GAME</u>
+        <button style="width: 69%;" onclick="resetBoard(); renderBoard()">START</button><br><br>
+        <div class="otherStuff">
+            <div style="height: 500px; overflow-y: scroll; overflow-x: hidden;">
+                <p>Options</p>
+                <p style="margin: 0%; font-size: 12px;">Turn Order:</p>
+                <button style="font-size: 12px; width: 95%;" class="turnToggle" onclick="toggleTurn()">White Starts</button><br><br>
+                <p style="margin: 0%; font-size: 12px;">Opponent:</p>
+                <button style="font-size: 12px; width: 95%;" class="cpuToggle" onclick="toggleCPU()">YOU vs CPU</button><br>
+                <p style="margin: 0%; font-size: 12px;">The Computer is a dumbass.</p><br>
+                <p style="margin: 0%; font-size: 12px;">Funny Mode:</p>
+                <button style="font-size: 12px; width: 95%;" class="funnyToggle" onclick="toggleFunny()">Disabled</button>
+                <br><br><br><br>
+                <p style="margin: 0%; font-size: 12px;">hi :3</p>
+            </div>
+    
+            <div style="height: 500px; overflow-y: scroll; overflow-x: hidden;">
+                <p>Patch Notes</p>
+                <details open>
+                    <summary style="margin: 0%;">v1.2a (hotfix)</summary>
+                    <p style="margin: 0%; font-size: 12px;">Fixes:</p>
+                    <p style="margin: 0%; font-size: 12px;">Fixed 2 player mode not working</p>
+                    <p style="margin: 0%; font-size: 12px;">(thanks SomBrine <3)</p>
+                </details>
+                <details open>
+                    <summary style="margin: 0%;">v1.2</summary>
+                    <p style="margin: 0%; font-size: 12px;">Fixes:</p>
+                    <p style="margin: 0%; font-size: 12px;">Fixed an issue where turn order sometimes wasn't respected</p>
+                    <p style="margin: 0%; font-size: 12px; margin-top: 16px;">Additions:</p>
+                    <p style="margin: 0%; font-size: 12px;">Added CPU opponents</p>
+                    <p style="margin: 0%; font-size: 12px; margin-bottom: 16px;">Added the ability to collapse patch notes</p>
+                </details>
+                <details>
+                    <summary style="margin: 0%;">v1.1</summary>
+                    <p style="margin: 0%; font-size: 12px;">Fixes:</p>
+                    <p style="margin: 0%; font-size: 12px;">Fixed an issue where Bishops and Queens could jump over other pieces</p>
+                    <p style="margin: 0%; font-size: 12px; margin-top: 16px;">Additions:</p>
+                    <p style="margin: 0%; font-size: 12px;">Added the main menu</p>
+                    <p style="margin: 0%; font-size: 12px;">Added patch notes</p>
+                    <p style="margin: 0%; font-size: 12px;">Added restart button</p>
+                    <p style="margin: 0%; font-size: 12px;">Added "Funny Mode"...</p>
+                </details>
+            </div>
+        </div>
+        <p class="version">v1.2a</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

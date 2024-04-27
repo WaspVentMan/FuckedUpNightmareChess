@@ -3,19 +3,81 @@
     src: url(deltarune.ttf);
 }
 
+* {
+    font-family: deltarune;
+    font-size: 24px;
+
+    user-select: none;
+}
+
 body {
     width: 768px;
     height: 768px;
     padding: 16px;
     margin: 0%;
-
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr); 
     
     background-image: url('board.png');
     background-repeat: no-repeat;
     background-color: #000;
+}
+
+button {
+    inherits: all;
+}
+
+details > summary {
+    list-style: none;
+
+    cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu {
+    width: 768px;
+    height: 768px;
+    
+    background-color: rgba(0, 0, 0, 0.75);
+
+    text-align: center;
+
+    color: white;
+    
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.title {
+    margin: 0%;
+    text-align: center;
+    color: white;
+}
+
+.otherStuff {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    padding: 8px;
+    margin: auto;
+}
+
+.version {
+    position: absolute;
+    margin: 0%;
+
+    bottom: -4px;
+    left: 8px;
+
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr); 
 }
 
 .containPiece {
@@ -38,12 +100,27 @@ body {
 .winCard {
     width: 768px;
     height: 768px;
-    line-height: 768px;
+    margin-top: 300px;
     text-align: center;
+}
 
+.winText {
     font-size: 96px;
-    font-family: deltarune;
 
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;
+}
+
+.winButtonDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+
+    margin: auto;
+
+    width: max-content;
+}
+
+.winButton {
+    width: 100%;
 }
